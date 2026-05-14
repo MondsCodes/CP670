@@ -2,5 +2,10 @@
 <resources>
     <string name="app_name">AndroidAssignments</string>
     <string name="hello_message">Ciao Mondo!</string>
-    <string name="ButtonText">I\’m a button</string>
+    <string name="ButtonText">Sono un pulsante</string>
+    <string name="login">Accedi</string>
+    <string name="password">password</string>
+    <string name="switch_prompt">Cosa fa questo?</string>
+    <string name="radio_button">PulsanteRadio</string>
+    <string name="check_box">CasellaDiControllo</string>
 </resources>
