@@ -8,4 +8,10 @@
     <string name="switch_prompt">Cosa fa questo?</string>
     <string name="radio_button">PulsanteRadio</string>
     <string name="check_box">CasellaDiControllo</string>
+    <string name="ButtonText2">Inizia chat</string>
+    <string name="send_button">Invia</string>
+    <string name="type_message_hint">Scrivi un messaggio...</string>
+    <string name="login_button">Accedi</string>
+    <string name="login_hint">nome utente</string>
+    <string name="password_label">password</string>
 </resources>

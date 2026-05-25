@@ -11,22 +11,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAssignments">
-        <activity
-            android:name=".ListItemsActivity"
-            android:exported="false" />
 
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-
+        <!-- Login is the launcher -->
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!-- MainActivity's parent is LoginActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+
+        <!-- ChatWindow's parent is MainActivity -->
+        <activity
+            android:name=".ChatWindow"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!-- ListItemsActivity's parent is MainActivity -->
+        <activity
+            android:name=".ListItemsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
 
     </application>
