@@ -2,4 +2,16 @@
     <string name="app_name">AndroidAssignments</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\’m a button</string>
+    <string name="login">Login</string>
+    <string name="password">password</string>
+    <string name="switch_prompt">What does this do?</string>
+    <string name="radio_button">RadioButton</string>
+    <string name="check_box">CheckBox</string>
+    <string name="switch_on">Switch is On</string>
+    <string name="switch_off">Switch is Off</string>
+    <string name="dialog_message">Do you want to finish this activity?</string>
+    <string name="dialog_title">Finish Activity</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No</string>
+    <string name="passed_message">ListItemsActivity passed: %1$s</string>
 </resources>
