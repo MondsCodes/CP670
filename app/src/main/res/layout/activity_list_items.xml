@@ -15,6 +15,7 @@
         android:text="@string/radio_button" />
 
     <CheckBox
+        android:id="@+id/checkboxButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
@@ -22,6 +23,7 @@
         android:text="@string/check_box" />
 
     <Switch
+        android:id="@+id/switchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
@@ -29,6 +31,7 @@
         android:text="@string/switch_prompt" />
 
     <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"

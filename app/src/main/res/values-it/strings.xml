@@ -8,4 +8,11 @@
     <string name="switch_prompt">Cosa fa questo?</string>
     <string name="radio_button">PulsanteRadio</string>
     <string name="check_box">CasellaDiControllo</string>
+    <string name="switch_on">Interruttore acceso</string>
+    <string name="switch_off">Interruttore spento</string>
+    <string name="dialog_message">Vuoi terminare questa attività?</string>
+    <string name="dialog_title">Termina attività</string>
+    <string name="ok">Sì</string>
+    <string name="cancel">No</string>
+    <string name="passed_message">ListItemsActivity ha inviato: %1$s</string>
 </resources>
