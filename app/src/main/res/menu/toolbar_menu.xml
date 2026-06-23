@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_one"
+        android:icon="@drawable/ic_one"
+        android:orderInCategory="101"
+        android:title="@string/choice_one"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_two"
+        android:icon="@drawable/ic_two"
+        android:orderInCategory="102"
+        android:title="@string/choice_two"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_three"
+        android:icon="@drawable/ic_three"
+        android:orderInCategory="103"
+        android:title="@string/choice_three"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="200"
+        android:title="@string/choice_about"
+        app:showAsAction="never" />
+
+</menu>

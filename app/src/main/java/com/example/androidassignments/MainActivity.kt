@@ -34,5 +34,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ChatWindow::class.java)
             startActivity(intent)
         }
+
+        // Test Toolbar button (Part 4)
+        val testToolbarButton = findViewById<Button>(R.id.buttonTestToolbar)
+        testToolbarButton.setOnClickListener {
+            Log.i(ACTIVITY_NAME, "User clicked Test Toolbar")
+            startActivity(Intent(this, TestToolbar::class.java))
+        }
     }
 }
