@@ -83,4 +83,20 @@ public class ChatFlowInstrumentedTest {
         // EditText should be cleared after last send
         onView(withId(R.id.chatEditText)).check(matches(withText("")));
     }
+
+    // ===== Persistence test =====
+
+    @Test
+    public void sentMessage_persistsAcrossRecreate() {
+        String unique = "Persisted-" + System.currentTimeMillis();
+
+        onView(withId(R.id.chatEditText))
+                .perform(typeText(unique), closeSoftKeyboard());
+        onView(withId(R.id.sendButton)).perform(click());
+
+        // Recreate the activity — messages should reload from the database
+        activityRule.getScenario().recreate();
+
+        onView(withText(unique)).check(matches(isDisplayed()));
+    }
 }
