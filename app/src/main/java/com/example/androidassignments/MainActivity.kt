@@ -3,7 +3,9 @@ package com.example.androidassignments
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -40,6 +42,23 @@ class MainActivity : AppCompatActivity() {
         testToolbarButton.setOnClickListener {
             Log.i(ACTIVITY_NAME, "User clicked Test Toolbar")
             startActivity(Intent(this, TestToolbar::class.java))
+        }
+
+        // Weather Forecast city drop-down and button (Assignment 3 Part 2)
+        val citySpinner = findViewById<Spinner>(R.id.citySpinner)
+        citySpinner.adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.canadian_cities,
+            android.R.layout.simple_spinner_dropdown_item
+        )
+
+        val weatherForecastButton = findViewById<Button>(R.id.weatherForecastButton)
+        weatherForecastButton.setOnClickListener {
+            val city = citySpinner.selectedItem.toString()
+            Log.i(ACTIVITY_NAME, "User clicked Weather Forecast for city: $city")
+            val intent = Intent(this, WeatherForecast::class.java)
+            intent.putExtra("city", city)
+            startActivity(intent)
         }
     }
 }

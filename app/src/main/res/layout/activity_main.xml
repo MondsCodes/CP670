@@ -47,4 +47,23 @@
         app:layout_constraintTop_toBottomOf="@id/startChatButton"
         android:layout_marginTop="32dp" />
 
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonTestToolbar" />
+
+    <Button
+        android:id="@+id/weatherForecastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_forecast_button"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/citySpinner" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,6 +29,36 @@
     <string name="cancel">Cancel</string>
     <string name="new_message_hint">New Message</string>
 
+    <!-- Assignment 3 Part 2: Weather Forecast -->
+    <string name="weather_forecast_button">Weather Forecast</string>
+    <string name="weather_image_description">Current weather icon</string>
+    <string name="current_temperature">Current temperature: %1$s°C</string>
+    <string name="min_temperature">Min temperature: %1$s°C</string>
+    <string name="max_temperature">Max temperature: %1$s°C</string>
+    <string-array name="canadian_cities">
+        <item>Ottawa</item>
+        <item>Toronto</item>
+        <item>Montreal</item>
+        <item>Vancouver</item>
+        <item>Calgary</item>
+        <item>Edmonton</item>
+        <item>Winnipeg</item>
+        <item>Quebec</item>
+        <item>Hamilton</item>
+        <item>Kitchener</item>
+        <item>London</item>
+        <item>Halifax</item>
+        <item>Victoria</item>
+        <item>Saskatoon</item>
+        <item>Regina</item>
+        <item>St. John\'s</item>
+        <item>Fredericton</item>
+        <item>Charlottetown</item>
+        <item>Whitehorse</item>
+        <item>Yellowknife</item>
+        <item>Iqaluit</item>
+    </string-array>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
