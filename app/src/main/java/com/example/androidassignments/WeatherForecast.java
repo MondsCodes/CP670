@@ -80,9 +80,11 @@ public class WeatherForecast extends AppCompatActivity {
             String city = (args.length > 0 && args[0] != null) ? args[0] : "Ottawa";
             HttpURLConnection conn = null;
             try {
-                URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q="
+                String queryURL = "http://api.openweathermap.org/data/2.5/weather?q="
                         + URLEncoder.encode(city, "UTF-8")
-                        + ",ca&APPID=79cecf493cb6e52d25bb7b7050ff723c&mode=xml&units=metric");
+                        + ",ca&APPID=79cecf493cb6e52d25bb7b7050ff723c&mode=xml&units=metric";
+                Log.i(ACTIVITY_NAME, "Query URL: " + queryURL);
+                URL url = new URL(queryURL);
                 conn = (HttpURLConnection) url.openConnection();
                 conn.setReadTimeout(10000);
                 conn.setConnectTimeout(15000);
