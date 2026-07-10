@@ -29,6 +29,13 @@
     <string name="cancel">Cancel</string>
     <string name="new_message_hint">New Message</string>
 
+    <!-- Assignment 3 Part 3: Message details fragment -->
+    <string name="delete_message_button">Delete this message</string>
+    <string name="message_placeholder">Message</string>
+    <string name="id_placeholder">ID</string>
+    <string name="message_label">Message: %1$s</string>
+    <string name="id_label">ID: %1$d</string>
+
     <!-- Assignment 3 Part 2: Weather Forecast -->
     <string name="weather_forecast_button">Weather Forecast</string>
     <string name="weather_image_description">Current weather icon</string>

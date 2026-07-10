@@ -51,6 +51,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity> <!-- MessageDetails's parent is ChatWindow -->
+        <activity
+            android:name=".MessageDetails"
+            android:exported="false"
+            android:parentActivityName=".ChatWindow">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChatWindow" />
         </activity> <!-- ListItemsActivity's parent is MainActivity -->
         <activity
             android:name=".ListItemsActivity"
