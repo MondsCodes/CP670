@@ -59,7 +59,7 @@ public class ChatWindow extends AppCompatActivity {
         chatEditText = findViewById(R.id.chatEditText);
         sendButton = findViewById(R.id.sendButton);
 
-        // If the FrameLayout was loaded, we are using the tablet layout (>= 600dp wide)
+        // If the FrameLayout was loaded, we are using the tablet layout (>= 900dp wide)
         FrameLayout frameLayout = findViewById(R.id.messageFrameLayout);
         isTablet = frameLayout != null;
         Log.i(ACTIVITY_NAME, "isTablet = " + isTablet);
